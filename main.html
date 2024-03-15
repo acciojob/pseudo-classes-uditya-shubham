@@ -1,16 +1,79 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px
+        }
+
+        :root {
+            --page-background-color: rgb(135, 206, 235);
+        }
+
+        body {
+            background-color: var(--page-background-color);
+        }
+
+        p:first-child {
+            background-color: black;
+            color: white;
+        }
+
+        p:nth-child(2) {
+            color: initial;/* or whatever your standard text color is */
+        }
+d
+        p:last-child {
+    color: red;
+    }
+
+    ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            width: 50%;
+            padding: 10px;
+            background-color: gray;
+            font-size: 16px;
+        }
+
+        li:nth-child(odd) {
+            background-color: white;
+        }
+
+        li:first-child,
+        li:last-child {
+            font-size: 22px;
+        }
+
+        li:nth-last-child(3) {
+            background-color: pink;
+        }
+
+    </style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <!-- the entire body must be written by student -->
 
-</body>
+
+    <p id="fst">First Paragraph</p>
+    <p id="sec">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cum labore ad ex, aperiam possimus enim corrupti id deleniti similique magnam? Perferendis eius corrupti, fuga aut cum dolor voluptatibus nam.</p>
+    <p id="thrd">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos pariatur reprehenderit consectetur aliquam possimus eum, non voluptates sapiente temporibus fugiat autem minima iusto consequatur. Numquam laborum ipsum magni reprehenderit, neque error illum illo aut.</p></body>
+
+<!-- creating the list -->
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+</ul>
+
 
 </html>
